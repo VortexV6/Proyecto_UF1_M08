@@ -98,6 +98,7 @@
                     <connections>
                         <outlet property="SearchBar" destination="dE9-n1-O9V" id="ki9-jU-dw2"/>
                         <outlet property="Table" destination="yc0-fG-Mfs" id="jIj-6A-mtd"/>
+                        <outlet property="image" destination="Yr1-MQ-4YR" id="DyF-7h-wOO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Je2-I3-v4v" userLabel="First Responder" sceneMemberID="firstResponder"/>

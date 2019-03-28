@@ -13,7 +13,6 @@
 		AC2271F42243EA3C005865B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2271F32243EA3C005865B7 /* Assets.xcassets */; };
 		AC2272022243EA3D005865B7 /* Proyecto_UF1_M08Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2272012243EA3D005865B7 /* Proyecto_UF1_M08Tests.swift */; };
 		AC22720D2243EA3D005865B7 /* Proyecto_UF1_M08UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC22720C2243EA3D005865B7 /* Proyecto_UF1_M08UITests.swift */; };
-		AC22721B2243FBA1005865B7 /* LogoMakr_8Mxsbx.png in Resources */ = {isa = PBXBuildFile; fileRef = AC22721A2243FBA1005865B7 /* LogoMakr_8Mxsbx.png */; };
 		AC709F4522492E7C00B65B10 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC709F4422492E7C00B65B10 /* Launch Screen.storyboard */; };
 		AC709F4722493C5500B65B10 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC709F4622493C5500B65B10 /* TableCell.swift */; };
 		EF5F6EBD224D12CA00954FF0 /* imagen_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5F6EBC224D12CA00954FF0 /* imagen_logo.png */; };
@@ -49,7 +48,6 @@
 		AC2272082243EA3D005865B7 /* Proyecto_UF1_M08UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Proyecto_UF1_M08UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC22720C2243EA3D005865B7 /* Proyecto_UF1_M08UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proyecto_UF1_M08UITests.swift; sourceTree = "<group>"; };
 		AC22720E2243EA3D005865B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC22721A2243FBA1005865B7 /* LogoMakr_8Mxsbx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogoMakr_8Mxsbx.png; path = ../../../../Downloads/LogoMakr_8Mxsbx.png; sourceTree = "<group>"; };
 		AC709F4422492E7C00B65B10 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		AC709F4622493C5500B65B10 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		EF5F6EBC224D12CA00954FF0 /* imagen_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagen_logo.png; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				AC709F4622493C5500B65B10 /* TableCell.swift */,
 				AC709F4422492E7C00B65B10 /* Launch Screen.storyboard */,
 				EF5F6EBC224D12CA00954FF0 /* imagen_logo.png */,
-				AC22721A2243FBA1005865B7 /* LogoMakr_8Mxsbx.png */,
 				AC2271F32243EA3C005865B7 /* Assets.xcassets */,
 				AC2271F82243EA3C005865B7 /* Info.plist */,
 			);
@@ -242,7 +239,6 @@
 				AC2271F22243EA3B005865B7 /* Main.storyboard in Resources */,
 				AC709F4522492E7C00B65B10 /* Launch Screen.storyboard in Resources */,
 				EF5F6EBD224D12CA00954FF0 /* imagen_logo.png in Resources */,
-				AC22721B2243FBA1005865B7 /* LogoMakr_8Mxsbx.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
