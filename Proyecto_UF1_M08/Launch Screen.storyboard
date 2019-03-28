@@ -24,7 +24,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoMakr_8Mxsbx.png" translatesAutoresizingMaskIntoConstraints="NO" id="MEY-Rm-973">
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagen_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="MEY-Rm-973">
                                 <rect key="frame" x="49" y="320.66666666666669" width="277" height="171"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="171" id="40P-nj-i7F"/>
@@ -61,6 +61,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LogoMakr_8Mxsbx.png" width="600" height="381"/>
+        <image name="imagen_logo.png" width="600" height="381"/>
     </resources>
 </document>
