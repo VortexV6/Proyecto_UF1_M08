@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AC2271ED2243EA3B005865B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2271EC2243EA3B005865B7 /* AppDelegate.swift */; };
-		AC2271EF2243EA3B005865B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2271EE2243EA3B005865B7 /* ViewController.swift */; };
+		AC2271EF2243EA3B005865B7 /* GameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2271EE2243EA3B005865B7 /* GameTableViewController.swift */; };
 		AC2271F22243EA3B005865B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2271F02243EA3B005865B7 /* Main.storyboard */; };
 		AC2271F42243EA3C005865B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2271F32243EA3C005865B7 /* Assets.xcassets */; };
 		AC2272022243EA3D005865B7 /* Proyecto_UF1_M08Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2272012243EA3D005865B7 /* Proyecto_UF1_M08Tests.swift */; };
 		AC22720D2243EA3D005865B7 /* Proyecto_UF1_M08UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC22720C2243EA3D005865B7 /* Proyecto_UF1_M08UITests.swift */; };
 		AC709F4522492E7C00B65B10 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC709F4422492E7C00B65B10 /* Launch Screen.storyboard */; };
 		AC709F4722493C5500B65B10 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC709F4622493C5500B65B10 /* TableCell.swift */; };
+		AC709F49224D277900B65B10 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC709F48224D277900B65B10 /* TableViewController.swift */; };
 		EF5F6EBD224D12CA00954FF0 /* imagen_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5F6EBC224D12CA00954FF0 /* imagen_logo.png */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +39,7 @@
 /* Begin PBXFileReference section */
 		AC2271E92243EA3B005865B7 /* Proyecto_UF1_M08.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proyecto_UF1_M08.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2271EC2243EA3B005865B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC2271EE2243EA3B005865B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC2271EE2243EA3B005865B7 /* GameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewController.swift; sourceTree = "<group>"; };
 		AC2271F12243EA3B005865B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC2271F32243EA3C005865B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC2271F82243EA3C005865B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +51,7 @@
 		AC22720E2243EA3D005865B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC709F4422492E7C00B65B10 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		AC709F4622493C5500B65B10 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		AC709F48224D277900B65B10 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		EF5F6EBC224D12CA00954FF0 /* imagen_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagen_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,13 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				AC2271EC2243EA3B005865B7 /* AppDelegate.swift */,
-				AC2271EE2243EA3B005865B7 /* ViewController.swift */,
+				AC2271EE2243EA3B005865B7 /* GameTableViewController.swift */,
 				AC2271F02243EA3B005865B7 /* Main.storyboard */,
 				AC709F4622493C5500B65B10 /* TableCell.swift */,
 				AC709F4422492E7C00B65B10 /* Launch Screen.storyboard */,
 				EF5F6EBC224D12CA00954FF0 /* imagen_logo.png */,
 				AC2271F32243EA3C005865B7 /* Assets.xcassets */,
 				AC2271F82243EA3C005865B7 /* Info.plist */,
+				AC709F48224D277900B65B10 /* TableViewController.swift */,
 			);
 			path = Proyecto_UF1_M08;
 			sourceTree = "<group>";
@@ -264,8 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC709F4722493C5500B65B10 /* TableCell.swift in Sources */,
-				AC2271EF2243EA3B005865B7 /* ViewController.swift in Sources */,
+				AC2271EF2243EA3B005865B7 /* GameTableViewController.swift in Sources */,
 				AC2271ED2243EA3B005865B7 /* AppDelegate.swift in Sources */,
+				AC709F49224D277900B65B10 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

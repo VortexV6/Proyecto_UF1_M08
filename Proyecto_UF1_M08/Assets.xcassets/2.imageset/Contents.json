@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "wowgame.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "wowgame.jpg",
       "scale" : "2x"
     },
     {
