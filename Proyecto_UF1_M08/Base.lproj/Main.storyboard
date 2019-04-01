@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="bqG-Gx-u3w">
+                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" placeholder="Google your games" showsBookmarkButton="YES" id="bqG-Gx-u3w">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
@@ -59,7 +59,6 @@
                                 <connections>
                                     <outlet property="nameLabel" destination="bol-fm-cxN" id="GxL-ca-gm8"/>
                                     <outlet property="nameLabel2" destination="20g-9L-0kL" id="ES9-Cu-I0f"/>
-                                    <outletCollection property="gestureRecognizers" destination="5aF-uu-hMw" appends="YES" id="7Nu-zY-hME"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -68,11 +67,13 @@
                             <outlet property="delegate" destination="reg-iy-pQT" id="F2I-Ix-jCc"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="XCP-Ur-IXh" kind="presentation" id="abs-OZ-hzc"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNM-BP-PpQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="5aF-uu-hMw"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="-36.206896551724142"/>
+            <point key="canvasLocation" x="1145" y="-50"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="IaJ-CR-w0u">
@@ -81,13 +82,74 @@
                     <view key="view" contentMode="scaleToFill" id="MEL-th-8s2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mey-vn-9D9">
+                                <rect key="frame" x="65" y="156" width="244" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="241" id="OfU-Rw-Rc7"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1P-sd-dD1">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Game Detail" id="dOf-xQ-BLL">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="Ftd-Jx-3h2">
+                                            <connections>
+                                                <segue destination="reg-iy-pQT" kind="presentation" modalTransitionStyle="partialCurl" id="Lkf-QG-A2j"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Carrito" id="ufK-Tt-sg2"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlZ-gC-1t0">
+                                <rect key="frame" x="65" y="706" width="244" height="30"/>
+                                <state key="normal" title="Comprar"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQO-cu-KAT">
+                                <rect key="frame" x="65" y="648" width="244" height="30"/>
+                                <state key="normal" title="Alquilar"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Asq-fl-fLt" firstAttribute="bottom" secondItem="JlZ-gC-1t0" secondAttribute="bottom" constant="42" id="0z8-cB-wcY"/>
+                            <constraint firstItem="A1P-sd-dD1" firstAttribute="leading" secondItem="MEL-th-8s2" secondAttribute="leading" id="Ehe-Rq-lV1"/>
+                            <constraint firstItem="mey-vn-9D9" firstAttribute="leading" secondItem="bQO-cu-KAT" secondAttribute="leading" id="LwX-r7-G9d"/>
+                            <constraint firstItem="JlZ-gC-1t0" firstAttribute="top" secondItem="bQO-cu-KAT" secondAttribute="bottom" constant="28" id="OSz-00-X4K"/>
+                            <constraint firstItem="A1P-sd-dD1" firstAttribute="top" secondItem="Asq-fl-fLt" secondAttribute="top" id="Q1E-gS-JuM"/>
+                            <constraint firstItem="A1P-sd-dD1" firstAttribute="centerX" secondItem="mey-vn-9D9" secondAttribute="centerX" id="QZ7-8G-owQ"/>
+                            <constraint firstAttribute="trailing" secondItem="A1P-sd-dD1" secondAttribute="trailing" id="W2b-Hm-7e8"/>
+                            <constraint firstItem="mey-vn-9D9" firstAttribute="top" secondItem="A1P-sd-dD1" secondAttribute="bottom" constant="68" id="b38-gK-QYw"/>
+                            <constraint firstItem="bQO-cu-KAT" firstAttribute="trailing" secondItem="JlZ-gC-1t0" secondAttribute="trailing" id="gl6-Aq-OEY"/>
+                            <constraint firstItem="mey-vn-9D9" firstAttribute="trailing" secondItem="bQO-cu-KAT" secondAttribute="trailing" id="mSO-dA-8Ik"/>
+                            <constraint firstItem="mey-vn-9D9" firstAttribute="leading" secondItem="Asq-fl-fLt" secondAttribute="leading" constant="65" id="pxD-2f-GQc"/>
+                            <constraint firstItem="bQO-cu-KAT" firstAttribute="leading" secondItem="JlZ-gC-1t0" secondAttribute="leading" id="sgR-Qx-Zwa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Asq-fl-fLt"/>
                     </view>
+                    <connections>
+                        <segue destination="6Oe-ob-JSZ" kind="presentation" id="tS8-8C-Qpq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2x-NA-ZZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2076" y="-49"/>
+            <point key="canvasLocation" x="2076" y="-49.50738916256158"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Cga-XB-Mu6">
+            <objects>
+                <viewController id="6Oe-ob-JSZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JEk-5i-4MM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Nw7-fS-QFp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6a9-b4-exz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3192.8000000000002" y="-50.246305418719217"/>
         </scene>
     </scenes>
 </document>

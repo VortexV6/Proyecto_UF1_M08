@@ -12,13 +12,14 @@ class GameTableViewController: UITableViewController{
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    
+   
     private func setUpGame(){
         gameArray.append(Game(name: "lol", price: 12.0, category: .buy, image: "1"))
         gameArray.append(Game(name: "wow", price: 10.0, category: .buy, image: "2"))
         gameArray.append(Game(name: "hytale", price: 8.0, category: .buy, image: "3"))
     }
-
+ 
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1

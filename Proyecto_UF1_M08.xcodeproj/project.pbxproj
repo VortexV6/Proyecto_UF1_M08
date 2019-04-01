@@ -13,6 +13,9 @@
 		AC2271F42243EA3C005865B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2271F32243EA3C005865B7 /* Assets.xcassets */; };
 		AC2272022243EA3D005865B7 /* Proyecto_UF1_M08Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2272012243EA3D005865B7 /* Proyecto_UF1_M08Tests.swift */; };
 		AC22720D2243EA3D005865B7 /* Proyecto_UF1_M08UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC22720C2243EA3D005865B7 /* Proyecto_UF1_M08UITests.swift */; };
+		AC46A14D22525AA100F98FD7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46A14C22525AA000F98FD7 /* SecondViewController.swift */; };
+		AC46A14F22525B1D00F98FD7 /* 3DTouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46A14E22525B1D00F98FD7 /* 3DTouchViewController.swift */; };
+		AC46A15122525BF400F98FD7 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46A15022525BF400F98FD7 /* CartViewController.swift */; };
 		AC709F4522492E7C00B65B10 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC709F4422492E7C00B65B10 /* Launch Screen.storyboard */; };
 		AC709F4722493C5500B65B10 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC709F4622493C5500B65B10 /* TableCell.swift */; };
 		AC709F49224D277900B65B10 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC709F48224D277900B65B10 /* TableViewController.swift */; };
@@ -49,6 +52,9 @@
 		AC2272082243EA3D005865B7 /* Proyecto_UF1_M08UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Proyecto_UF1_M08UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC22720C2243EA3D005865B7 /* Proyecto_UF1_M08UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proyecto_UF1_M08UITests.swift; sourceTree = "<group>"; };
 		AC22720E2243EA3D005865B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC46A14C22525AA000F98FD7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		AC46A14E22525B1D00F98FD7 /* 3DTouchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DTouchViewController.swift; sourceTree = "<group>"; };
+		AC46A15022525BF400F98FD7 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		AC709F4422492E7C00B65B10 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		AC709F4622493C5500B65B10 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		AC709F48224D277900B65B10 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +112,9 @@
 				AC2271EC2243EA3B005865B7 /* AppDelegate.swift */,
 				AC2271EE2243EA3B005865B7 /* GameTableViewController.swift */,
 				AC2271F02243EA3B005865B7 /* Main.storyboard */,
+				AC46A15022525BF400F98FD7 /* CartViewController.swift */,
+				AC46A14E22525B1D00F98FD7 /* 3DTouchViewController.swift */,
+				AC46A14C22525AA000F98FD7 /* SecondViewController.swift */,
 				AC709F4622493C5500B65B10 /* TableCell.swift */,
 				AC709F4422492E7C00B65B10 /* Launch Screen.storyboard */,
 				EF5F6EBC224D12CA00954FF0 /* imagen_logo.png */,
@@ -268,8 +277,11 @@
 			files = (
 				AC709F4722493C5500B65B10 /* TableCell.swift in Sources */,
 				AC2271EF2243EA3B005865B7 /* GameTableViewController.swift in Sources */,
+				AC46A15122525BF400F98FD7 /* CartViewController.swift in Sources */,
 				AC2271ED2243EA3B005865B7 /* AppDelegate.swift in Sources */,
+				AC46A14D22525AA100F98FD7 /* SecondViewController.swift in Sources */,
 				AC709F49224D277900B65B10 /* TableViewController.swift in Sources */,
+				AC46A14F22525B1D00F98FD7 /* 3DTouchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
