@@ -29,6 +29,9 @@ class GameTableViewController: UITableViewController{
         return gameArray.count
     }
     
+    
+    
+    //************BOTONES LATERALES AL HACER SWIPE************
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let buy = UIContextualAction(style: .normal, title: "Comprar") { (action, view, nil) in
             print ("Comprar")
@@ -43,21 +46,10 @@ class GameTableViewController: UITableViewController{
         }
         return UISwipeActionsConfiguration(actions: [rent])
     }
-    /*
-   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell =
-            tableView.dequeueReusableCell(withIdentifier: "Cell") as? TableCell else{
-            return UITableViewCell()
-        }
-        
-        cell.nameLabel.text = gameArray[indexPath.row].name
-        cell.nameLabel2.text = gameArray[indexPath.row].name
-        cell.nameImage.image = UIImage(named:gameArray[indexPath.row].image)
-        return cell
-    }
     
-
-}*/
+    
+    //************FIN DE BOTONES LATERALES AL HACER SWIPE************
+    
 
      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let  cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)

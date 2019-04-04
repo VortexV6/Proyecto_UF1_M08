@@ -18,14 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" placeholder="Google your games" showsBookmarkButton="YES" id="bqG-Gx-u3w">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <searchBar key="tableHeaderView" clipsSubviews="YES" contentMode="top" barStyle="black" searchBarStyle="minimal" placeholder="Google your games" id="bqG-Gx-u3w">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                            </scopeButtonTitles>
                         </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="122" id="ZXi-jU-b6A" customClass="TableCell" customModule="Proyecto_UF1_M08" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="375" height="122"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="122"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZXi-jU-b6A" id="RwR-8Z-J9S">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="121.66666666666667"/>
@@ -46,6 +49,9 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wdf-rn-8oe">
                                             <rect key="frame" x="0.0" y="-8" width="141" height="128"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                            </accessibility>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -59,6 +65,7 @@
                                 <connections>
                                     <outlet property="nameLabel" destination="bol-fm-cxN" id="GxL-ca-gm8"/>
                                     <outlet property="nameLabel2" destination="20g-9L-0kL" id="ES9-Cu-I0f"/>
+                                    <segue destination="XCP-Ur-IXh" kind="presentation" id="PlO-ws-yj4"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -67,9 +74,6 @@
                             <outlet property="delegate" destination="reg-iy-pQT" id="F2I-Ix-jCc"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <segue destination="XCP-Ur-IXh" kind="presentation" id="abs-OZ-hzc"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNM-BP-PpQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,12 +97,12 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Game Detail" id="dOf-xQ-BLL">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="Ftd-Jx-3h2">
+                                        <barButtonItem key="leftBarButtonItem" title="🔙" id="Ftd-Jx-3h2">
                                             <connections>
                                                 <segue destination="reg-iy-pQT" kind="presentation" modalTransitionStyle="partialCurl" id="Lkf-QG-A2j"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Carrito" id="ufK-Tt-sg2"/>
+                                        <barButtonItem key="rightBarButtonItem" title="🛒" id="ufK-Tt-sg2"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
